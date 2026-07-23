@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Worst Page</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="/scripts/redirectPage.js"></script>
+    <script src="/scripts/reloadPage.js"></script>
+</head>
+
+<body>
+    <main>
+        <video controls>
+            <source src="/media/video/video-1min.mp4" type="video/mp4">
+        </video>
+    </main>
+    <div id="anuncio-data">
+        
+        <audio src="/media/audio/laugh.mp3" id="audio-laugh"></audio>
+    </div>
+    
+    <audio src="/media/audio/explosion.mp3" id="audio-explosion"></audio>
+    <audio src="/media/audio/knock-door.mp3" id="audio-knock"></audio>
+
+    <script src="/scripts/backgroundColors.js"></script>
+    <script src="/scripts/getMetadata.js"></script>
+    <script src="/scripts/playSound.js"></script>
+    <script>
+        function ocultarAnuncio(){
+            document.getElementById("anuncio-data").style.visibility = "hidden";
+        }
+    </script>
+</body>
+
+</html>
